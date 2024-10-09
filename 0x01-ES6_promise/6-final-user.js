@@ -8,5 +8,6 @@ export default function handleProfileSignup(firstName, lastName, fileName) {
         status: resp.status,
         value: resp.status === 'fulfilled' ? resp.value : resp.reason,
       }
-    )));
+    )))
+    .then((result) => console.log(result));
 }
