@@ -27,9 +27,13 @@ const table = document.createElement('table');
 studentsList.forEach(item => {
   const row = document.createElement('tr');
   
-  const cell = document.createElement('td');
-  cell.textContent = item.firstName; // Set the text content of the cell
-  cell.textContent = item.location; // Set the text content of the cell
-  row.appendChild(cell); // Append the cell to the row
+  const cell1 = document.createElement('td');
+  const cell2 = document.createElement('td');
+  cell1.textContent = item.firstName; // Set the text content of the cell
+  cell2.textContent = item.location; // Set the text content of the cell
+  row.appendChild(cell1); // Append the cell to the row
+  row.appendChild(cell2)
   table.appendChild(row); // Append the row to the table
 });
+
+document.querySelector('body').appendChild(table);
