@@ -6,7 +6,7 @@ process.stdin.on('readable', () => {
   if (studentName !== null) {
     process.stdout.write(`Your name is: ${studentName}`);
   }
-  process.stdin.resume()
+  process.stdin.resume();
 });
 
 process.stdin.on('end', () => {
