@@ -22,7 +22,7 @@ function countStudents(path) {
 
         console.log(`Number of students in CS: ${fieldObj.CS.length}. List: ${fieldObj.CS.join(', ')}`);
         console.log(`Number of students in SWE: ${fieldObj.SWE.length}. List: ${fieldObj.SWE.join(', ')}`);
-        resolve('');
+        resolve(fieldObj);
       }
     });
   });
