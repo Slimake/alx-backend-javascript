@@ -2,7 +2,7 @@ const fs = require('node:fs');
 
 function countStudents(path) {
   try {
-    data = fs.readFileSync(path, 'utf8');
+    const data = fs.readFileSync(path, 'utf8');
 
     const dataList = data.split('\n').slice(1, -1);
     const NUMBER_OF_STUDENTS = dataList.length;
