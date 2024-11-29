@@ -1,0 +1,19 @@
+{
+  "name": "0x06-unittests_in_js",
+  "version": "1.0.0",
+  "description": "0x06-unittests_in_js",
+  "main": "index.js",
+  "scripts": {
+    "lint": "./node_modules/.bin/eslint",
+    "test": "./node_modules/mocha/bin/mocha.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "chai": "^5.1.2"
+  },
+  "devDependencies": {
+    "chai": "*",
+    "mocha": "^10.8.2"
+  }
+}
