@@ -5,7 +5,7 @@ function calculateNumber(type, a, b) {
   if (type === 'SUM') {
     return a + b;
   } else if (type === 'SUBTRACT') {
-    return b - a;
+    return a - b;
   } else if (type === 'DIVIDE') {
     if (b === 0) {
       return 'Error';
