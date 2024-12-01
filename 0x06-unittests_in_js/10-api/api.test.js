@@ -61,7 +61,8 @@ describe('available_payments route', () => {
   });
   it('correct result', () => {
     request('http://localhost:7865/available_payments', (err, res, body) => {
-      expect(res.body).to.deep.equal('{"payment_methods":{"credit_cards":true,"paypal":false}}');
+      const bod = JSON.parse(res.body);
+      expect(bod).to.deep.equal({payment_methods:{credit_cards:true,paypal:false}});
     });
   });
 });
