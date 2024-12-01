@@ -2,7 +2,7 @@ const expect = require('chai').expect;
 const request = require('request');
 
 describe('Index page', () => {
-  it('correct status code for home route', () => {
+  it('correct status code', () => {
     request('http://localhost:7865', (err, res, body) => {
       expect(res.statusCode).to.equal(200);
     });
@@ -12,7 +12,10 @@ describe('Index page', () => {
       expect(res.body).to.equal('Welcome to the payment system');
     });
   });
-  it('correct status code for cart route', () => {
+});
+
+describe('Cart route', () => {
+  it('correct status code', () => {
     request('http://localhost:7865/cart/12', (err, res, body) => {
       expect(res.statusCode).to.equal(200);
     });
